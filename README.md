@@ -58,31 +58,18 @@ Traditional to-do lists create anxiety. Habit trackers feel like chores. **Start
 - [x] Welcome Boost (2x Multiplier for first week)
 
 
+┌─────────────────────────────────────────────────────────────┐
+│                     NEXT.JS 15 (App Router)                  │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   Dashboard  │  │  AI Decomp.  │  │   Checkout   │       │
+│  │   (RSC)      │  │   (Route)    │  │   (Route)    │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+└─────────────────────────────────────────────────────────────┘
+│
+┌───────────────────┼───────────────────┐
+▼                   ▼                   ▼
+┌──────────────┐   ┌──────────────┐   ┌──────────────────┐
+│   Supabase   │   │   OpenAI     │   │     Stripe       │
+│  (Auth/DB)   │   │ (GPT-4o-mini)│   │ (USDC Checkout)  │
+└──────────────┘   └──────────────┘   └──────────────────┘
 
-## Environment Variables
-```env
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
-SUPABASE_SERVICE_ROLE_KEY=
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
-OPENAI_API_KEY=
-
-
-
-
----
-
-### **2. SIMPLIFIED 3-HOUR ROADMAP**
-
-| Time | Phase | Focus | Output |
-|------|-------|-------|--------|
-| **0:00-0:45** | **Scaffold** | Next.js init, shadcn/ui, Supabase auth, layout shell | Working auth + dashboard frame |
-| **0:45-1:30** | **Core** | Habit selector, AI micro-task generator, check-in system | Functional task flow |
-| **1:30-2:15** | **Payments** | Stripe Checkout integration, stake recording | USDC deposit working |
-| **2:15-2:45** | **Raffle** | Weighted entry logic, stats display | Prize pool visible |
-| **2:45-3:00** | **Polish** | Welcome modal, demo data, mobile fixes | Demo-ready |
-
----
-
-### **3. FOLDER STRUCTURE**

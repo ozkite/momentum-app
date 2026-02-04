@@ -33,6 +33,10 @@ Traditional to-do lists create anxiety. Habit trackers feel like chores. **Start
 - **Database**: Supabase (PostgreSQL + Auth)
 - **Payments**: Stripe (Stablecoin/USDC support)
 - **AI**: Vercel AI SDK (OpenAI GPT-4o-mini for micro-task generation)
+- ICP Canisters
+- USDT or USDC on ICP, ckUSD or ckUSDT
+- Fiat onramper
+- Login component
 -     Frontend: Next.js with TypeScript
     Backend: Next.js API Routes
     Database: SQLite with Prisma ORM

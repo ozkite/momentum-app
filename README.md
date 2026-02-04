@@ -1,51 +1,38 @@
 
 ``` mermaid
-flowchart TB
-    subgraph Client["Client Layer"]
-        A[Next.js 15 App Router]
-        B[React Server Components]
-        C[Tailwind plus shadcn/ui]
-    end
+flowchart TD
+    A[User opens app] --> B{First time?}
+    B -->|Yes| C[Claim Welcome Boost 2x]
+    B -->|No| D[Morning Check-in]
     
-    subgraph Edge["Edge Layer"]
-        D[Vercel Edge Network]
-        E[Middleware/Auth]
-    end
+    C --> D
     
-    subgraph API["API Layer"]
-        F[Server Actions]
-        G[Stripe Checkout API]
-        H[OpenAI Streaming API]
-        I[Supabase Client]
-    end
+    D --> E[What are you avoiding?]
+    E --> F[AI generates 5 micro-steps]
+    F --> G[Select 3+ habits<br/>Mind/Body/Spirit]
     
-    subgraph Data["Data Layer"]
-        J[Supabase PostgreSQL]
-        K[Row Level Security]
-        L[Real-time Subscriptions]
-    end
-    
-    subgraph External["External Services"]
-        M[Stripe Payments<br/>Fiat to USDC]
-        N[OpenAI GPT-4o-mini]
-        O[ICP ckUSDC<br/>Future Settlement]
-    end
-    
-    A --> D
-    D --> E
-    E --> F
-    F --> G
-    F --> H
-    F --> I
+    G --> H{Staked this week?}
+    H -->|No| I[Stake $1+ USDC<br/>via Stripe]
+    H -->|Yes| J[Daily Dashboard]
     I --> J
-    J --> K
-    J --> L
-    G --> M
-    H --> N
-    M -.->|Phase 2| O
     
-    style Client fill:#e1f5ff
-    style API fill:#fff3cd
-    style Data fill:#d4edda
-    style External fill:#ffe6cc
+    J --> K[Complete micro-steps<br/>and habits throughout day]
+    K --> L{Week end?}
+    L -->|No| J
+    L -->|Yes| M{Goals met?}
+    
+    M -->|Yes| N[Refund stake<br/>plus Raffle tickets<br/>equals habits times stake times multiplier]
+    M -->|No| O[Forfeit to prize pool]
+    
+    N --> P[Weekly Raffle<br/>Win Caffeine Credits<br/>or Cash]
+    O --> Q[Try again next week<br/>Streak reset]
+    
+    P --> R[New Week<br/>Streak bonus plus 10%]
+    Q --> R
+    R --> D
+    
+    style A fill:#e1f5ff
+    style N fill:#d4edda
+    style O fill:#f8d7da
+    style P fill:#fff3cd
 ```

@@ -20,3 +20,19 @@
 - **Weekly Raffles:** Gamified financial incentives.
 - **Group Pulses:** Anonymous 3-5 person accountability pods.
 
+# 🎯 Momentum
+
+&gt; Destroy procrastination. Stake on yourself. Win by doing.
+
+Momentum is an anti-procrastination accountability platform that combines behavioral psychology (loss aversion) with micro-task generation to help users overcome starting friction on avoided tasks while building positive habits.
+
+## The Problem
+Traditional to-do lists create anxiety. Habit trackers feel like chores. **Starting is the hardest part.**
+
+## The Solution
+1. **The Mirror**: Ask "What are you avoiding right now?" → AI breaks it into 5-minute micro-steps
+2. **The Stake**: Bet $1+ weekly on yourself (higher stakes = more raffle tickets)
+3. **The Raffle**: Complete goals → enter weekly raffles (coffee credits, cash prizes)
+4. **The Loop**: Avoid bad habits (doom scrolling) by filling void with 20+ micro-achievements
+
+## Core Loop

@@ -1,128 +1,23 @@
 
-# 🌊 Momentum
-
-**Destroy procrastination. Stake on yourself. Win by doing.**
-
-Momentum is a high-stakes habit formation platform that combines **behavioral psychology** (loss aversion) with **AI task decomposition** to destroy the friction of starting. Unlike traditional trackers that guilt you into compliance, Momentum targets the moment of avoidance and turns it into momentum.
-
-&gt; *"The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small, manageable tasks, and then starting on the first one."* — Mark Twain (adapted)
-
----
-
-## 🎯 The Problem
-
-Traditional productivity tools fail because they:
-- **Create anxiety** with endless to-do lists
-- **Feel like chores** with rigid habit tracking
-- **Ignore the root cause**: the overwhelming moment before starting
-
-**Starting is the hardest part.** Momentum fixes this by attacking the "activation energy" barrier directly.
-
----
-
-## 💡 The Solution: The Anti-Procrastination Mirror
-
-### 1. The Mirror (AI Task Shredder)
-Tell the app what you're avoiding right now. Our AI breaks it into **five 5-minute micro-steps** with zero friction. No decisions, no preparation—just immediate action.
-
-### 2. The Stake (Loss Aversion Engine)
-Bet **$1+ weekly** on yourself using USDC/stablecoins. Higher stakes = more raffle tickets. Miss your goals → lose your stake. Complete them → full refund + prize pool entry.
-
-### 3. The Loop (Habit Replacement)
-Fill the void of bad habits (doomscrolling, snoozing) with **30+ free micro-achievements** across Mind, Body, and Spirit. Zero cost, zero equipment.
-
-### 4. The Reward (Weighted Raffle)
-Complete weekly goals to enter raffles for:
-- **Weekly**: $100 Caffeine Credits
-- **Monthly**: $20+ Cash Prize (4-week streak holders)
-
----
-
-## 🚀 Core User Flow
-
-```mermaid
 flowchart TD
-    A[User opens app] --&gt; B{First time?}
-    B --&gt;|Yes| C[Claim Welcome Boost 2x]
-    B --&gt;|No| D[Morning Check-in]
+    A[User Signs Up] --> B[The Mirror: Identify Challenge]
+    B --> C[AI Breaks Down into 5-Minute Steps]
+    C --> D[Select Habits to Build/Avoid]
+    D --> E[Stake USDC/USDT on Weekly Goals]
+    E --> F[Complete Daily Micro-Habits]
+    F --> G[Track Progress & Check Off Tasks]
+    G --> H[Complete Weekly Goals]
+    H --> I[Enter Raffle with Weighted Odds]
+    I --> J[Win Rewards or Try Again]
+    J --> B
     
-    C --&gt; D
-    
-    D --&gt; E[What are you avoiding?]
-    E --&gt; F[AI generates 5 micro-steps]
-    F --&gt; G[Select 3+ habits&lt;br/&gt;Mind/Body/Spirit]
-    
-    G --&gt; H{Staked this week?}
-    H --&gt;|No| I[Stake $1+ USDC&lt;br/&gt;via Stripe]
-    H --&gt;|Yes| J[Daily Dashboard]
-    I --&gt; J
-    
-    J --&gt; K[Complete micro-steps&lt;br/&gt;& habits throughout day]
-    K --&gt; L{Week end?}
-    L --&gt;|No| J
-    L --&gt;|Yes| M{Goals met?}
-    
-    M --&gt;|Yes| N[Refund stake&lt;br/&gt;+ Raffle tickets&lt;br/&gt;= habits × stake × multiplier]
-    M --&gt;|No| O[Forfeit to prize pool]
-    
-    N --&gt; P[Weekly Raffle&lt;br/&gt;Win Caffeine Credits&lt;br/&gt;or Cash]
-    O --&gt; Q[Try again next week&lt;br/&gt;Streak reset]
-    
-    P --&gt; R[New Week&lt;br/&gt;Streak bonus +10%]
-    Q --&gt; R
-    R --&gt; D
-    
-    style A fill:#e1f5ff
-    style N fill:#d4edda
-    style O fill:#f8d7da
-    style P fill:#fff3cd
-
-
-flowchart TB
-    subgraph Client["Client Layer"]
-        A[Next.js 15 App Router]
-        B[React Server Components]
-        C[Tailwind + shadcn/ui]
-    end
-    
-    subgraph Edge["Edge Layer"]
-        D[Vercel Edge Network]
-        E[Middleware/Auth]
-    end
-    
-    subgraph API["API Layer"]
-        F[Server Actions]
-        G[Stripe Checkout API]
-        H[OpenAI Streaming API]
-        I[Supabase Client]
-    end
-    
-    subgraph Data["Data Layer"]
-        J[Supabase PostgreSQL]
-        K[Row Level Security]
-        L[Real-time Subscriptions]
-    end
-    
-    subgraph External["External Services"]
-        M[Stripe Payments<br/>Fiat → USDC]
-        N[OpenAI GPT-4o-mini]
-        O[ICP ckUSDC<br/>Future Settlement]
-    end
-    
-    A --> D
-    D --> E
-    E --> F
-    F --> G
-    F --> H
-    F --> I
-    I --> J
-    J --> K
-    J --> L
-    G --> M
-    H --> N
-    M -.->|Phase 2| O
-    
-    style Client fill:#e1f5ff
-    style API fill:#fff3cd
-    style Data fill:#d4edda
-    style External fill:#ffe6cc
+    style A fill:#e1f5fe
+    style B fill:#b3e5fc
+    style C fill:#81d4fa
+    style D fill:#4fc3f7
+    style E fill:#29b6f6
+    style F fill:#03a9f4
+    style G fill:#039be5
+    style H fill:#0288d1
+    style I fill:#0277bd
+    style J fill:#01579b

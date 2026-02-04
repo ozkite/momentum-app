@@ -105,7 +105,7 @@ _________________________
 
 
 
-```mermaid
+``` mermaid
 graph TD
     A[User Opens Momentum] --> B{First Time?}
     B -- Yes --> C[Claim Welcome Boost: 2x Multiplier]
@@ -140,7 +140,7 @@ graph TD
 
 
 
-```text
+``` mermaid
 /momentum
 ├── app/
 │   ├── api/shred/route.ts     # AI Task Decomposition
@@ -156,6 +156,7 @@ graph TD
 │   └── habits-data.ts         # Library of 30+ items
 └── supabase/
     └── schema.sql             # Users, Stakes, Logs
+```
 
 
 
@@ -179,8 +180,7 @@ graph TD
 
 
 
-
-```mermaid
+``` mermaid
 flowchart TD
     A[User opens app] --&gt; B{First time?}
     B --&gt;|Yes| C[Claim Welcome Boost 2x]
@@ -216,7 +216,7 @@ flowchart TD
     style N fill:#d4edda
     style O fill:#f8d7da
     style P fill:#fff3cd
-
+```
 
 
 

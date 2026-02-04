@@ -1,5 +1,25 @@
-I added items, organize and unify to a final readme version, and give me a mairmaid file to display a flowchart of the app, to display on the read me. 
-
+graph TD
+    A[User Opens Momentum] --> B{First Time?}
+    B -- Yes --> C[Claim Welcome Boost: 2x Multiplier]
+    B -- No --> D[The Mirror: What are you avoiding?]
+    
+    D --> E[AI Task Shredder]
+    E --> F[5 Micro-Steps Generated]
+    
+    F --> G[Select Daily Habit Checklist]
+    G --> H[Mind / Body / Spirit Tasks]
+    
+    H --> I[Stake Your Momentum]
+    I --> J[Stripe/Stablecoin Payment $1+]
+    
+    J --> K[Daily Check-in Loop]
+    K --> L{Goal Achieved?}
+    
+    L -- Yes --> M[Keep Stake + Raffle Entry]
+    L -- No --> N[Stake Lost to Prize Pool]
+    
+    M --> O[Weekly Caffeine Raffle]
+    M --> P[Monthly $20 Streak Prize]
 
 # 🌊 Momentum: The Anti-Procrastination Mirror
 

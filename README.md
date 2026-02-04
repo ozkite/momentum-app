@@ -1,3 +1,4 @@
+_ _ 
 graph TD
     A[User Opens Momentum] --> B{First Time?}
     B -- Yes --> C[Claim Welcome Boost: 2x Multiplier]
@@ -20,6 +21,7 @@ graph TD
     
     M --> O[Weekly Caffeine Raffle]
     M --> P[Monthly $20 Streak Prize]
+_ _
 
 # 🌊 Momentum: The Anti-Procrastination Mirror
 

@@ -1,4 +1,4 @@
-<img width="1436" height="1162" alt="image" src="https://github.com/user-attachments/assets/af16c634-140a-43e3-a7f2-85a8c31f7ed8" />```mermaid
+``mermaid
  flowchart TD
     Start((Open Momentum)) --> Welcome{First Time?}
     

@@ -1,4 +1,4 @@
-```mermaid
+<img width="1436" height="1162" alt="image" src="https://github.com/user-attachments/assets/af16c634-140a-43e3-a7f2-85a8c31f7ed8" />```mermaid
  flowchart TD
     Start((Open Momentum)) --> Welcome{First Time?}
     
@@ -26,27 +26,53 @@
     Weekly --> Monthly[Monthly $20 Streak Prize]
 ```
 
-``` mermaid
-flowchart TD
-    A[User Signs Up] --> B[The Mirror: Identify Challenge]
-    B --> C[AI Breaks Down into 5-Minute Steps]
-    C --> D[Select Habits to Build/Avoid]
-    D --> E[Stake USDC/USDT on Weekly Goals]
-    E --> F[Complete Daily Micro-Habits]
-    F --> G[Track Progress & Check Off Tasks]
-    G --> H[Complete Weekly Goals]
-    H --> I[Enter Raffle with Weighted Odds]
-    I --> J[Win Rewards or Try Again]
-    J --> B
+```mermaid
+flowchart TB
+    subgraph Client["Client Layer"]
+        A[Next.js 15 App Router]
+        B[React Server Components]
+        C[Tailwind plus shadcn/ui]
+    end
     
-    style A fill:#e1f5fe
-    style B fill:#b3e5fc
-    style C fill:#81d4fa
-    style D fill:#4fc3f7
-    style E fill:#29b6f6
-    style F fill:#03a9f4
-    style G fill:#039be5
-    style H fill:#0288d1
-    style I fill:#0277bd
-    style J fill:#01579b
+    subgraph Edge["Edge Layer"]
+        D[Vercel Edge Network]
+        E[Middleware/Auth]
+    end
+    
+    subgraph API["API Layer"]
+        F[Server Actions]
+        G[Stripe Checkout API]
+        H[OpenAI Streaming API]
+        I[Supabase Client]
+    end
+    
+    subgraph Data["Data Layer"]
+        J[Supabase PostgreSQL]
+        K[Row Level Security]
+        L[Real-time Subscriptions]
+    end
+    
+    subgraph External["External Services"]
+        M[Stripe Payments<br/>Fiat to USDC]
+        N[OpenAI GPT-4o-mini]
+        O[ICP ckUSDC<br/>Future Settlement]
+    end
+    
+    A --> D
+    D --> E
+    E --> F
+    F --> G
+    F --> H
+    F --> I
+    I --> J
+    J --> K
+    J --> L
+    G --> M
+    H --> N
+    M -.->|Phase 2| O
+    
+    style Client fill:#e1f5ff
+    style API fill:#fff3cd
+    style Data fill:#d4edda
+    style External fill:#ffe6cc
 ```

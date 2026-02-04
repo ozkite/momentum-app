@@ -1,120 +1,70 @@
-_ _ 
-graph TD
-    A[User Opens Momentum] --> B{First Time?}
-    B -- Yes --> C[Claim Welcome Boost: 2x Multiplier]
-    B -- No --> D[The Mirror: What are you avoiding?]
-    
-    D --> E[AI Task Shredder]
-    E --> F[5 Micro-Steps Generated]
-    
-    F --> G[Select Daily Habit Checklist]
-    G --> H[Mind / Body / Spirit Tasks]
-    
-    H --> I[Stake Your Momentum]
-    I --> J[Stripe/Stablecoin Payment $1+]
-    
-    J --> K[Daily Check-in Loop]
-    K --> L{Goal Achieved?}
-    
-    L -- Yes --> M[Keep Stake + Raffle Entry]
-    L -- No --> N[Stake Lost to Prize Pool]
-    
-    M --> O[Weekly Caffeine Raffle]
-    M --> P[Monthly $20 Streak Prize]
-_ _
-
 # 🌊 Momentum: The Anti-Procrastination Mirror
 
-**Stop Avoiding. Start Flowing.** Momentum is a high-stakes habit formation app built for the "New You." Unlike traditional trackers, Momentum targets the **friction of starting** by breaking down avoided tasks with AI and utilizing **Loss Aversion** through stablecoin staking.
+**Stop Avoiding. Start Flowing.** *Destroy procrastination. Stake on yourself. Win by doing.*
 
-&gt; Destroy procrastination. Stake on yourself. Win by doing.
+Momentum is a high-stakes accountability platform that transforms the "anxiety of starting" into micro-wins. Using behavioral psychology (loss aversion) and AI-driven task decomposition, Momentum helps you crush procrastination while building a "New You" through Mind, Body, and Spirit habits.
 
-Momentum is an anti-procrastination accountability platform that combines behavioral psychology (loss aversion) with micro-task generation to help users overcome starting friction on avoided tasks while building positive habits.
+## 🎯 The Hook
+Traditional to-do lists create anxiety. **Momentum** targets the friction of starting by asking one simple question: *"What are you avoiding right now?"*
 
-## 🎯 The Problem
-Traditional to-do lists create anxiety. Habit trackers feel like chores. **Starting is the hardest part.**
+---
 
-## The Solution
-1. **The Mirror**: Ask "What are you avoiding right now?" → AI breaks it into 5-minute micro-steps
-2. **The Stake**: Bet $1+ weekly on yourself (higher stakes = more raffle tickets)
-3. **The Raffle**: Complete goals → enter weekly raffles (coffee credits, cash prizes)
-4. **The Loop**: Avoid bad habits (doom scrolling) by filling void with 20+ micro-achievements
+## 🚀 How It Works
 
+1.  **The Mirror:** Tell the AI what you're avoiding. It uses GPT-4o-mini to shred that scary task into **5-minute micro-steps**.
+2.  **The Habit Grid:** Select from 30+ free habits (Touch grass, 3-min meditation, no-doomscrolling) to fill your day with positive momentum.
+3.  **The Stake:** Put "Skin in the Game." Stake $1+ (via Stripe/USDC) on your weekly success. 
+4.  **The Raffle:** Success keeps your money and enters you into the **Weekly Caffeine Raffle** and the **Monthly $20 Streak Prize**.
 
-   🚀 How It Works
-
-    Identify Your Challenge: Tell the app what you're avoiding right now
-    Break It Down: Get 5 micro-steps to start immediately
-    Select Habits: Choose positive habits to build and negative ones to avoid
-    Stake Your Commitment: Lock in a weekly amount (starting at $1)
-    Track Progress: Check off completed habits throughout the day
-    Earn Rewards: Complete goals to increase your chances in weekly raffles
-
-   
-
-## 🚀 The Core Loop
-1. **The Mirror:** Tell the AI what you are avoiding. It gives you 5 micro-steps.
-2. **The Micro-Habits:** Complete "Mind, Body, Spirit" tasks (Touch grass, breathe, stretch).
-3. **Skin in the Game:** Stake $1+ per week. Complete your goals to enter the monthly $100+ Caffeine Raffle.
+---
 
 ## 🛠 Tech Stack
-- **Caffeine.ai** 
-- **Framework:** Next.js 15 (App Router)
-- **USDT**, **USDC** Stablecoin smart ocntract addresses
-- **Styling:** Tailwind CSS + Shadcn UI
-- **Backend/Auth:** Supabase
-- **AI:** OpenAI GPT-4o-mini (Task Decomposition)
-- **Payments:** Stripe (Fiat-to-Staked Credit)
-- - **Framework**: Next.js 15 (App Router)
-- **Styling**: Tailwind CSS + shadcn/ui
-- **Database**: Supabase (PostgreSQL + Auth)
-- **Payments**: Stripe (Stablecoin/USDC support)
-- **AI**: Vercel AI SDK (OpenAI GPT-4o-mini for micro-task generation)
-- ICP Canisters
-- USDT or USDC on ICP, ckUSD or ckUSDT
-- Fiat onramper
-- Login component
--     Frontend: Next.js with TypeScript
-    Backend: Next.js API Routes
-    Database: SQLite with Prisma ORM
-    Authentication: NextAuth.js
-    Payments: Stripe for card processing and stablecoin conversion
-    Styling: Tailwind CSS
-    UI Components: Radix UI
-  
 
-## 📦 Features
-- **AI Task Shredder:** Turns big fears into 5-minute wins.
-- **The Avoidance List:** 30+ habits to quit (Doomscrolling, Snoozing, etc.).
-- **Weekly Raffles:** Gamified financial incentives.
-- **Group Pulses:** Anonymous 3-5 person accountability pods.
--     Task Breakdown: Uses AI to break down intimidating tasks into 5-minute micro-steps
-    Habit Tracking: Choose from 30+ simple, free habits across Mind, Body, and Spirit categories
-    Financial Staking: Stake money on your weekly goals to increase commitment
-    Reward System: Earn entries into weekly and monthly raffles based on your consistency
-    Social Accountability: Join small groups, share progress, and cheer on others
-    Guided Exercises: Access breathing techniques, stretching guides, and more
-- [x] AI Task Decomposition (5-min micro-steps)
-- [x] USDC Staking with Weekly Lockups
-- [x] Weighted Raffle System (more tasks + higher stake = better odds)
-- [x] 30-Free-Habit Library (Mind/Body/Spirit)
-- [x] Welcome Boost (2x Multiplier for first week)
+- **Framework:** Next.js 15 (App Router) + TypeScript
+- **Styling:** Tailwind CSS + shadcn/ui
+- **Backend/Auth:** Supabase (PostgreSQL + Auth)
+- **AI Engine:** Vercel AI SDK + OpenAI GPT-4o-mini
+- **Web3/Stablecoin:** ICP Canisters (ckUSDC / ckUSDT) for transparent prize pools.
+- **Payments:** Stripe (Fiat-to-Stablecoin onramp)
+- **Incentives:** Caffeine.ai integration for reward distribution.
 
+---
 
-🏆 Rewards & Prizes
+## 📦 Core Features
 
-    Weekly raffles for caffeine credits
-    Monthly $20 cash prize for 4-week streak holders
-    Special bonuses for consistent achievers
+### 🧠 Mind, Body, Spirit Library (30+ Habits)
+- **Mind:** 3-min meditation, 5 pages of reading, 4-7-8 breathing.
+- **Body:** Stretch arms, 10 squats, splash cold water, drink 500ml water.
+- **Spirit:** Hug a tree, touch grass, say good morning to 3 people, gratitude log.
 
+### 🚫 The Avoidance List (The "Anti-Habits")
+Track and quit: Snoozing the alarm, excess doomscrolling, caffeine after 3 PM, and more.
 
+### 💸 The Financial Engine
+- **Weekly Lockups:** Stake USDT/USDC to prove your commitment.
+- **Weighted Raffles:** Higher stakes + more tasks = higher probability of winning.
+- **Welcome Boost:** New users claim a **2x Win Multiplier** for their first week.
 
-    📄 License 
+### 👥 Group Pulses
+Anonymous pods of 3-5 people for social accountability without the noise of social media.
 
-This project is licensed under the MIT License - see the LICENSE  file for details. 
-🙏 Acknowledgments 
+---
 
-     The Momentum team for bringing this idea to life
-     Our beta testers for valuable feedback
-     The open-source community for the amazing tools that made this possible
-     
+## 🏗 Project Structure
+
+```text
+/momentum
+├── app/
+│   ├── api/shred/route.ts     # AI Task Decomposition
+│   ├── api/webhooks/stripe    # Stablecoin staking logic
+│   ├── dashboard/             # Main Checklist & Mirror UI
+│   └── raffle/                # Winners & Rankings
+├── components/
+│   ├── mirror/                # AI Input & Step display
+│   ├── habits/                # Checklist & Progress rings
+│   └── staking/               # Stripe/ICP Integration
+├── lib/
+│   ├── supabase/              # DB Clients
+│   └── habits-data.ts         # Library of 30+ items
+└── supabase/
+    └── schema.sql             # Users, Stakes, Logs

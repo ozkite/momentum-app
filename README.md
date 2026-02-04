@@ -1,4 +1,5 @@
-``` flowchart TD
+```mermaid
+ flowchart TD
     Start((Open Momentum)) --> Welcome{First Time?}
     
     Welcome -- Yes --> Boost[Claim 2x Multiplier Welcome Boost]
@@ -25,7 +26,8 @@
     Weekly --> Monthly[Monthly $20 Streak Prize]
 ```
 
-``` flowchart TD
+``` mermaid
+flowchart TD
     A[User Signs Up] --> B[The Mirror: Identify Challenge]
     B --> C[AI Breaks Down into 5-Minute Steps]
     C --> D[Select Habits to Build/Avoid]

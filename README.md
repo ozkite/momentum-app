@@ -21,16 +21,64 @@ Traditional to-do lists create anxiety. Habit trackers feel like chores. **Start
 3. **Skin in the Game:** Stake $1+ per week. Complete your goals to enter the monthly $100+ Caffeine Raffle.
 
 ## 🛠 Tech Stack
+- **Caffeine.ai** 
 - **Framework:** Next.js 15 (App Router)
+- **USDT**, **USDC** Stablecoin smart ocntract addresses
 - **Styling:** Tailwind CSS + Shadcn UI
 - **Backend/Auth:** Supabase
 - **AI:** OpenAI GPT-4o-mini (Task Decomposition)
 - **Payments:** Stripe (Fiat-to-Staked Credit)
+- - **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS + shadcn/ui
+- **Database**: Supabase (PostgreSQL + Auth)
+- **Payments**: Stripe (Stablecoin/USDC support)
+- **AI**: Vercel AI SDK (OpenAI GPT-4o-mini for micro-task generation)
+-     Frontend: Next.js with TypeScript
+    Backend: Next.js API Routes
+    Database: SQLite with Prisma ORM
+    Authentication: NextAuth.js
+    Payments: Stripe for card processing and stablecoin conversion
+    Styling: Tailwind CSS
+    UI Components: Radix UI
+  
 
 ## 📦 Features
 - **AI Task Shredder:** Turns big fears into 5-minute wins.
 - **The Avoidance List:** 30+ habits to quit (Doomscrolling, Snoozing, etc.).
 - **Weekly Raffles:** Gamified financial incentives.
 - **Group Pulses:** Anonymous 3-5 person accountability pods.
+- [x] AI Task Decomposition (5-min micro-steps)
+- [x] USDC Staking with Weekly Lockups
+- [x] Weighted Raffle System (more tasks + higher stake = better odds)
+- [x] 30-Free-Habit Library (Mind/Body/Spirit)
+- [x] Welcome Boost (2x Multiplier for first week)
 
 
+
+## Environment Variables
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+OPENAI_API_KEY=
+
+
+
+
+---
+
+### **2. SIMPLIFIED 3-HOUR ROADMAP**
+
+| Time | Phase | Focus | Output |
+|------|-------|-------|--------|
+| **0:00-0:45** | **Scaffold** | Next.js init, shadcn/ui, Supabase auth, layout shell | Working auth + dashboard frame |
+| **0:45-1:30** | **Core** | Habit selector, AI micro-task generator, check-in system | Functional task flow |
+| **1:30-2:15** | **Payments** | Stripe Checkout integration, stake recording | USDC deposit working |
+| **2:15-2:45** | **Raffle** | Weighted entry logic, stats display | Prize pool visible |
+| **2:45-3:00** | **Polish** | Welcome modal, demo data, mobile fixes | Demo-ready |
+
+---
+
+### **3. FOLDER STRUCTURE**

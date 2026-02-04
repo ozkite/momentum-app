@@ -1,3 +1,6 @@
+I added items, organize and unify to a final readme version, and give me a mairmaid file to display a flowchart of the app, to display on the read me. 
+
+
 # 🌊 Momentum: The Anti-Procrastination Mirror
 
 **Stop Avoiding. Start Flowing.** Momentum is a high-stakes habit formation app built for the "New You." Unlike traditional trackers, Momentum targets the **friction of starting** by breaking down avoided tasks with AI and utilizing **Loss Aversion** through stablecoin staking.
@@ -14,6 +17,18 @@ Traditional to-do lists create anxiety. Habit trackers feel like chores. **Start
 2. **The Stake**: Bet $1+ weekly on yourself (higher stakes = more raffle tickets)
 3. **The Raffle**: Complete goals → enter weekly raffles (coffee credits, cash prizes)
 4. **The Loop**: Avoid bad habits (doom scrolling) by filling void with 20+ micro-achievements
+
+
+   🚀 How It Works
+
+    Identify Your Challenge: Tell the app what you're avoiding right now
+    Break It Down: Get 5 micro-steps to start immediately
+    Select Habits: Choose positive habits to build and negative ones to avoid
+    Stake Your Commitment: Lock in a weekly amount (starting at $1)
+    Track Progress: Check off completed habits throughout the day
+    Earn Rewards: Complete goals to increase your chances in weekly raffles
+
+   
 
 ## 🚀 The Core Loop
 1. **The Mirror:** Tell the AI what you are avoiding. It gives you 5 micro-steps.
@@ -51,6 +66,12 @@ Traditional to-do lists create anxiety. Habit trackers feel like chores. **Start
 - **The Avoidance List:** 30+ habits to quit (Doomscrolling, Snoozing, etc.).
 - **Weekly Raffles:** Gamified financial incentives.
 - **Group Pulses:** Anonymous 3-5 person accountability pods.
+-     Task Breakdown: Uses AI to break down intimidating tasks into 5-minute micro-steps
+    Habit Tracking: Choose from 30+ simple, free habits across Mind, Body, and Spirit categories
+    Financial Staking: Stake money on your weekly goals to increase commitment
+    Reward System: Earn entries into weekly and monthly raffles based on your consistency
+    Social Accountability: Join small groups, share progress, and cheer on others
+    Guided Exercises: Access breathing techniques, stretching guides, and more
 - [x] AI Task Decomposition (5-min micro-steps)
 - [x] USDC Staking with Weekly Lockups
 - [x] Weighted Raffle System (more tasks + higher stake = better odds)
@@ -58,18 +79,20 @@ Traditional to-do lists create anxiety. Habit trackers feel like chores. **Start
 - [x] Welcome Boost (2x Multiplier for first week)
 
 
-┌─────────────────────────────────────────────────────────────┐
-│                     NEXT.JS 15 (App Router)                  │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
-│  │   Dashboard  │  │  AI Decomp.  │  │   Checkout   │       │
-│  │   (RSC)      │  │   (Route)    │  │   (Route)    │       │
-│  └──────────────┘  └──────────────┘  └──────────────┘       │
-└─────────────────────────────────────────────────────────────┘
-│
-┌───────────────────┼───────────────────┐
-▼                   ▼                   ▼
-┌──────────────┐   ┌──────────────┐   ┌──────────────────┐
-│   Supabase   │   │   OpenAI     │   │     Stripe       │
-│  (Auth/DB)   │   │ (GPT-4o-mini)│   │ (USDC Checkout)  │
-└──────────────┘   └──────────────┘   └──────────────────┘
+🏆 Rewards & Prizes
 
+    Weekly raffles for caffeine credits
+    Monthly $20 cash prize for 4-week streak holders
+    Special bonuses for consistent achievers
+
+
+
+    📄 License 
+
+This project is licensed under the MIT License - see the LICENSE  file for details. 
+🙏 Acknowledgments 
+
+     The Momentum team for bringing this idea to life
+     Our beta testers for valuable feedback
+     The open-source community for the amazing tools that made this possible
+     
